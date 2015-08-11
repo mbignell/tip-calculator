@@ -43,5 +43,5 @@ Continuing to work on adding:
 
 GIF walkthrough of all required and optional stories
 
-<img src="http://i.imgur.com/OKUUfq4.gif">
+<img src="http://i.imgur.com/CYRkEL9.gif">
 
