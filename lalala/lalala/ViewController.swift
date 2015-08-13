@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         total = (billAmount + tip) / numberPeopleCount
         tipAmountValue = tipStepperPercent * billAmount
         
-        tipAmount.text = String(format: "$%.2f", tipAmountValue)
+        tipAmount.text = String(format: "+ $%.2f", tipAmountValue)
         
         totalLabel.text = "$\(total)"
         

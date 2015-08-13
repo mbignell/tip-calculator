@@ -122,7 +122,7 @@
                                                 </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="YS1-JR-YrB">
-                                                <rect key="frame" x="171" y="61" width="119" height="38"/>
+                                                <rect key="frame" x="33" y="61" width="257" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
                                                 <color key="textColor" red="0.0" green="0.14560547830000001" blue="0.2998145518" alpha="1" colorSpace="calibratedRGB"/>
@@ -191,12 +191,15 @@
                                 <segments>
                                     <segment title="$"/>
                                     <segment title="£"/>
-                                    <segment title="✰"/>
+                                    <segment title="⭐︎"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onCurrencyChange:" destination="Gtc-4q-bVc" eventType="valueChanged" id="NgP-e4-neg"/>
+                                </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="kMA-Zu-z9q">
-                                <rect key="frame" x="117" y="178" width="175" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" id="kMA-Zu-z9q">
+                                <rect key="frame" x="117" y="179" width="175" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="12%"/>
@@ -205,6 +208,9 @@
                                     <segment title="20%"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onTipDefaultChange:" destination="Gtc-4q-bVc" eventType="valueChanged" id="JuZ-zK-75F"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6bl-M5-HWF">
                                 <rect key="frame" x="262" y="55" width="30" height="30"/>
@@ -230,9 +236,29 @@
                                     <action selector="DoneAction:" destination="Gtc-4q-bVc" eventType="touchUpInside" id="uDN-u9-Va5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency would now theoretically be $" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="zv7-d1-q4W">
+                                <rect key="frame" x="34" y="261" width="299" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip default would now be 0.18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="c3M-lw-QdB">
+                                <rect key="frame" x="34" y="297" width="270" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14560547830000001" blue="0.2998145518" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="currencyControl" destination="Jd4-bJ-LBN" id="N1F-LJ-MRP"/>
+                        <outlet property="currencyFeedback" destination="zv7-d1-q4W" id="DVh-js-zfi"/>
+                        <outlet property="tipDefaultControl" destination="kMA-Zu-z9q" id="IpM-wi-QH7"/>
+                        <outlet property="tipDefaultFeedback" destination="c3M-lw-QdB" id="HRu-7y-JI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOz-ir-S6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

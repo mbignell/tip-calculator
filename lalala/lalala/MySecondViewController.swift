@@ -10,6 +10,14 @@ import UIKit
 
 class MySecondViewController: UIViewController {
 
+    @IBOutlet weak var currencyControl: UISegmentedControl!
+    @IBOutlet weak var tipDefaultControl: UISegmentedControl!
+    
+    @IBOutlet weak var currencyFeedback: UILabel!
+    @IBOutlet weak var tipDefaultFeedback: UILabel!
+    
+    var currencyChoice="$"
+    var tipDefaultChoice = 0.18
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +31,18 @@ class MySecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onCurrencyChange(sender: AnyObject) {
+       var currencyChoices = ["$", "£", "⭐︎"]
+        currencyChoice = currencyChoices[currencyControl.selectedSegmentIndex]
+       currencyFeedback.text = "Currency would now theoretically be \(currencyChoice)"
+    }
+    
+    @IBAction func onTipDefaultChange(sender: AnyObject) {
+        var tipDefaultChoices = [0.12, 0.15, 0.18,0.20]
+        tipDefaultChoice = tipDefaultChoices[tipDefaultControl.selectedSegmentIndex]
+        tipDefaultFeedback.text = "Tip default would now be \(tipDefaultChoice)"
+    }
+    
     @IBAction func DoneAction(send: AnyObject)
     {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -34,5 +54,6 @@ class MySecondViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
+    
     
 }
