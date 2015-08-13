@@ -12,7 +12,8 @@
 		4D567B011AEB5ED7007A549B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D567AFF1AEB5ED7007A549B /* Main.storyboard */; };
 		4D567B031AEB5ED7007A549B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D567B021AEB5ED7007A549B /* Images.xcassets */; };
 		4D567B061AEB5ED7007A549B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D567B041AEB5ED7007A549B /* LaunchScreen.xib */; };
-		4D567B121AEB5ED7007A549B /* lalalaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D567B111AEB5ED7007A549B /* lalalaTests.swift */; };
+		4D6642341B7C63AD006E55D4 /* MySecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6642331B7C63AD006E55D4 /* MySecondViewController.swift */; };
+		4DB685B91B7A883A00DE20E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DB685B81B7A883A00DE20E1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,8 @@
 		4D567B021AEB5ED7007A549B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4D567B051AEB5ED7007A549B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4D567B0B1AEB5ED7007A549B /* lalalaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lalalaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D567B101AEB5ED7007A549B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D567B111AEB5ED7007A549B /* lalalaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lalalaTests.swift; sourceTree = "<group>"; };
+		4D6642331B7C63AD006E55D4 /* MySecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySecondViewController.swift; sourceTree = "<group>"; };
+		4DB685B81B7A883A00DE20E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +60,8 @@
 		4D567AED1AEB5ED7007A549B = {
 			isa = PBXGroup;
 			children = (
+				4DB685B81B7A883A00DE20E1 /* Default-568h@2x.png */,
 				4D567AF81AEB5ED7007A549B /* lalala */,
-				4D567B0E1AEB5ED7007A549B /* lalalaTests */,
 				4D567AF71AEB5ED7007A549B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +81,7 @@
 				4D567AFB1AEB5ED7007A549B /* AppDelegate.swift */,
 				4D567AFD1AEB5ED7007A549B /* ViewController.swift */,
 				4D567AFF1AEB5ED7007A549B /* Main.storyboard */,
+				4D6642331B7C63AD006E55D4 /* MySecondViewController.swift */,
 				4D567B021AEB5ED7007A549B /* Images.xcassets */,
 				4D567B041AEB5ED7007A549B /* LaunchScreen.xib */,
 				4D567AF91AEB5ED7007A549B /* Supporting Files */,
@@ -91,23 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				4D567AFA1AEB5ED7007A549B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4D567B0E1AEB5ED7007A549B /* lalalaTests */ = {
-			isa = PBXGroup;
-			children = (
-				4D567B111AEB5ED7007A549B /* lalalaTests.swift */,
-				4D567B0F1AEB5ED7007A549B /* Supporting Files */,
-			);
-			path = lalalaTests;
-			sourceTree = "<group>";
-		};
-		4D567B0F1AEB5ED7007A549B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D567B101AEB5ED7007A549B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D567B011AEB5ED7007A549B /* Main.storyboard in Resources */,
+				4DB685B91B7A883A00DE20E1 /* Default-568h@2x.png in Resources */,
 				4D567B061AEB5ED7007A549B /* LaunchScreen.xib in Resources */,
 				4D567B031AEB5ED7007A549B /* Images.xcassets in Resources */,
 			);
@@ -214,6 +200,7 @@
 			files = (
 				4D567AFE1AEB5ED7007A549B /* ViewController.swift in Sources */,
 				4D567AFC1AEB5ED7007A549B /* AppDelegate.swift in Sources */,
+				4D6642341B7C63AD006E55D4 /* MySecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D567B121AEB5ED7007A549B /* lalalaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +325,9 @@
 		4D567B161AEB5ED7007A549B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = lalala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,8 +336,9 @@
 		4D567B171AEB5ED7007A549B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = lalala/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +397,7 @@
 				4D567B171AEB5ED7007A549B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D567B181AEB5ED7007A549B /* Build configuration list for PBXNativeTarget "lalalaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +406,7 @@
 				4D567B1A1AEB5ED7007A549B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3B6DD3C8-9003-43DE-AA2D-D2320D0F5EB4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lalala</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5B1E7342D8B0BAF60AD607983EF4D365A33605CD</key>
+		<string>https://github.com/mbignell/tip-calculator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lalala/lalala.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5B1E7342D8B0BAF60AD607983EF4D365A33605CD</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mbignell/tip-calculator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5B1E7342D8B0BAF60AD607983EF4D365A33605CD</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5B1E7342D8B0BAF60AD607983EF4D365A33605CD</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lalala</string>
+		</dict>
+	</array>
+</dict>
+</plist>
