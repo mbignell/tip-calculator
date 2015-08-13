@@ -36,6 +36,6 @@ Of note: apologies for the horrible name. I've tried to change it as per the int
 <i>GIF walkthrough of all required and optional stories</i>
 
 Updated walkthrough:<br/>
-<img src="http://i.imgur.com/x3JNQaU.gif">
+<img src="http://i.imgur.com/Xe093NL.gif">
 
 
