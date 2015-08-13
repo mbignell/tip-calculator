@@ -24,12 +24,14 @@ Optional (incl large and small for clarity):
 –UI stepper for more flexibility
 –Bill splitting
 –App icon
+–Update 8/12: added animation to initial interaction
+–Update 8/12: added fake settings page — as in, the segmented controls are not (yet) hooked up to anything, but the modal is functional
+–Update 8/12: There's a money bag emoji that links to a gif because I was curious how that worked, too, so why not?
 
 Continuing to work on adding:
 –Figuring out the proper launch image
 —$ prefix on bill entering
-–Settings/currency
-–Animations
+–Settings/currency -> functional
 –Might address some usability concerns of the associations between stepper and tip, but prioritizing cool coding things ;)
 
 Of note: apologies for the horrible name. I've tried to change it as per the internet's instructions, and I just break it—wanted to prioritize features v name.
@@ -39,6 +41,7 @@ Of note: apologies for the horrible name. I've tried to change it as per the int
 
 GIF walkthrough of all required and optional stories
 
-
+Updated walkthrough:
+<img src="http://i.imgur.com/x3JNQaU.gif">
 
 
