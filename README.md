@@ -41,7 +41,7 @@ Of note: apologies for the horrible name. I've tried to change it as per the int
 
 GIF walkthrough of all required and optional stories
 
-Updated walkthrough:
+Updated walkthrough:<br/>
 <img src="http://i.imgur.com/x3JNQaU.gif">
 
 
