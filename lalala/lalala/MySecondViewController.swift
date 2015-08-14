@@ -16,6 +16,8 @@ class MySecondViewController: UIViewController {
     @IBOutlet weak var currencyFeedback: UILabel!
     @IBOutlet weak var tipDefaultFeedback: UILabel!
     
+    @IBOutlet weak var saveButton: UIButton!
+    
     var currencyChoice="$"
     var tipDefaultChoice = 0.18
     
@@ -32,15 +34,19 @@ class MySecondViewController: UIViewController {
     }
     
     @IBAction func onCurrencyChange(sender: AnyObject) {
-       var currencyChoices = ["$", "£", "⭐︎"]
+        var currencyChoices = ["$", "£", "⭐︎"]
         currencyChoice = currencyChoices[currencyControl.selectedSegmentIndex]
-       currencyFeedback.text = "Currency would now theoretically be \(currencyChoice)"
+        currencyFeedback.text = "Currency would now theoretically be \(currencyChoice)"
+        saveButton.backgroundColor = UIColor(red: 0.9, green: 0.4, blue: 0.0, alpha: 0.9)
+        saveButton.setTitle("Save", forState: UIControlState.Normal)
     }
     
     @IBAction func onTipDefaultChange(sender: AnyObject) {
         var tipDefaultChoices = [0.12, 0.15, 0.18,0.20]
         tipDefaultChoice = tipDefaultChoices[tipDefaultControl.selectedSegmentIndex]
         tipDefaultFeedback.text = "Tip default would now be \(tipDefaultChoice)"
+        saveButton.backgroundColor = UIColor(red: 0.9, green: 0.4, blue: 0.0, alpha: 0.9)
+        saveButton.setTitle("Save", forState: UIControlState.Normal)
     }
     
     @IBAction func DoneAction(send: AnyObject)

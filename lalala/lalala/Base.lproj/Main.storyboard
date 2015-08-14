@@ -225,10 +225,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H6d-GY-JPT">
                                 <rect key="frame" x="0.0" y="505" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.87258845567703247" green="0.32556968927383423" blue="0.20342612266540527" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.15190865099430084" green="0.21437463164329529" blue="0.34392526745796204" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
-                                <state key="normal" title="Save">
+                                <state key="normal" title="Close">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -256,6 +256,7 @@
                     <connections>
                         <outlet property="currencyControl" destination="Jd4-bJ-LBN" id="N1F-LJ-MRP"/>
                         <outlet property="currencyFeedback" destination="zv7-d1-q4W" id="DVh-js-zfi"/>
+                        <outlet property="saveButton" destination="H6d-GY-JPT" id="Tnb-Sq-laL"/>
                         <outlet property="tipDefaultControl" destination="kMA-Zu-z9q" id="IpM-wi-QH7"/>
                         <outlet property="tipDefaultFeedback" destination="c3M-lw-QdB" id="HRu-7y-JI9"/>
                     </connections>
