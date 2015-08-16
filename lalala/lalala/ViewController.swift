@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipStepperControl: UIStepper!
@@ -24,14 +25,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitView: UIView!
     @IBOutlet weak var finalShare: UIView!
     
+    @IBOutlet weak var tipDefaultControl: UISegmentedControl!
+    
+    @IBOutlet weak var billfieldTest: UILabel!
+    var userDefaults : NSUserDefaults?
+    let numbers = [ 18, 20, 11, 14]
+    var defaultNumber : Int?
+    
     
     var tipStepperPercent = 0.15
     var numberPeopleCount = 1.0
     
-     var billAmount = 0.0
+    var billAmount = 0.0
     var tip = 0.0
     var total = 0.0
-     var tipAmountValue = 0.0
+    var tipAmountValue = 0.0
     
     var count: Int = 0
 
@@ -45,11 +53,23 @@ class ViewController: UIViewController {
         numberPeopleLabel.text = "Just Me"
         finalBillLabel.text = "Your Total"
         billField.becomeFirstResponder()
+        billfieldTest.text = ""
         
         tipView.center.x  -= view.bounds.width
         splitView.center.x -= view.bounds.width
         finalShare.center.x -= view.bounds.width
 
+        userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        defaultNumber = userDefaults?.integerForKey("defaultNumber")
+        
+        for (index,tmp) in enumerate(numbers) {
+            NSLog("### Val :\(index) \(tmp)")
+            if(defaultNumber == tmp){
+                tipDefaultControl.selectedSegmentIndex = index
+                println("success")
+            }
+        }
     }
     
     
@@ -94,6 +114,10 @@ class ViewController: UIViewController {
         count = 1
         
         billAmount = NSString(string:billField.text).doubleValue
+        billfieldTest.text = "$\(billField.text)"
+        if billField.text == "" {
+            billfieldTest.text = ""
+        }
         
         runCalculations()
     }

@@ -131,6 +131,13 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.76108589130000004" green="0.87151288800000004" blue="0.95778397910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m1N-Ka-86l">
+                                        <rect key="frame" x="111" y="58" width="178" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="33"/>
+                                        <color key="textColor" red="0.0" green="0.14560547830000001" blue="0.2998145518" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79821593469999996" green="0.90304936160000004" blue="0.97713462750000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -139,6 +146,7 @@
                     </view>
                     <connections>
                         <outlet property="billField" destination="pGe-6B-bgg" id="5dZ-Rl-Xhy"/>
+                        <outlet property="billfieldTest" destination="m1N-Ka-86l" id="imN-9s-6nu"/>
                         <outlet property="finalBillLabel" destination="zPD-59-kfb" id="jBs-rX-nxm"/>
                         <outlet property="finalShare" destination="1HC-Vg-Yw4" id="te1-TH-O5J"/>
                         <outlet property="numberPeopleControl" destination="Y3i-Ty-shY" id="ypQ-RM-nqL"/>
@@ -198,20 +206,6 @@
                                     <action selector="onCurrencyChange:" destination="Gtc-4q-bVc" eventType="valueChanged" id="NgP-e4-neg"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" id="kMA-Zu-z9q">
-                                <rect key="frame" x="117" y="179" width="175" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="12%"/>
-                                    <segment title="15%"/>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
-                                </segments>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="onTipDefaultChange:" destination="Gtc-4q-bVc" eventType="valueChanged" id="JuZ-zK-75F"/>
-                                </connections>
-                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6bl-M5-HWF">
                                 <rect key="frame" x="262" y="55" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -250,6 +244,20 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="on2-ux-0pB">
+                                <rect key="frame" x="80" y="176" width="103" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="18" maximumValue="100" stepValue="2" id="kH6-df-XsB">
+                                <rect key="frame" x="198" y="179" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onTipDefaultChange2:" destination="Gtc-4q-bVc" eventType="valueChanged" id="g2Q-3J-9FM"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14560547830000001" blue="0.2998145518" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -257,8 +265,9 @@
                         <outlet property="currencyControl" destination="Jd4-bJ-LBN" id="N1F-LJ-MRP"/>
                         <outlet property="currencyFeedback" destination="zv7-d1-q4W" id="DVh-js-zfi"/>
                         <outlet property="saveButton" destination="H6d-GY-JPT" id="Tnb-Sq-laL"/>
-                        <outlet property="tipDefaultControl" destination="kMA-Zu-z9q" id="IpM-wi-QH7"/>
+                        <outlet property="tipDefaultChoiceLabel" destination="on2-ux-0pB" id="OQf-fc-6AD"/>
                         <outlet property="tipDefaultFeedback" destination="c3M-lw-QdB" id="HRu-7y-JI9"/>
+                        <outlet property="tipDefaultStepper" destination="kH6-df-XsB" id="WhY-qq-tHv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOz-ir-S6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -274,4 +283,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
 </document>

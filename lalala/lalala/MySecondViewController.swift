@@ -9,23 +9,39 @@
 import UIKit
 
 class MySecondViewController: UIViewController {
-
-    @IBOutlet weak var currencyControl: UISegmentedControl!
-    @IBOutlet weak var tipDefaultControl: UISegmentedControl!
+  
+    var userDefaults : NSUserDefaults?
+    let numbers = [ 13, 15, 16, 7]
+    var defaultNumber : Int?
     
+    @IBOutlet weak var currencyControl: UISegmentedControl!
+    
+    @IBOutlet weak var tipDefaultStepper: UIStepper!
     @IBOutlet weak var currencyFeedback: UILabel!
     @IBOutlet weak var tipDefaultFeedback: UILabel!
     
     @IBOutlet weak var saveButton: UIButton!
     
+    @IBOutlet weak var tipDefaultChoiceLabel: UILabel!
+    
+    
     var currencyChoice="$"
     var tipDefaultChoice = 0.18
+    var tipStepperPercent = 0.18
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        
         
+        userDefaults = NSUserDefaults.standardUserDefaults()
+        let numberVal = userDefaults?.integerForKey("defaultNumber")
+     //   tipDefaultControl.selectedSegmentIndex = 0
+      //  for (index,tmp) in enumerate(numbers) {
+       //     if(numberVal == tmp){
+        //        tipDefaultControl.selectedSegmentIndex = index
+         //   }
+       // }
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,13 +57,15 @@ class MySecondViewController: UIViewController {
         saveButton.setTitle("Save", forState: UIControlState.Normal)
     }
     
-    @IBAction func onTipDefaultChange(sender: AnyObject) {
-        var tipDefaultChoices = [0.12, 0.15, 0.18,0.20]
-        tipDefaultChoice = tipDefaultChoices[tipDefaultControl.selectedSegmentIndex]
+    @IBAction func onTipDefaultChange2(sender: UIStepper) {
+        tipDefaultChoice = sender.value
+        tipDefaultChoiceLabel.text = "\(Int(sender.value).description)%"
+        tipStepperPercent = sender.value/100
         tipDefaultFeedback.text = "Tip default would now be \(tipDefaultChoice)"
         saveButton.backgroundColor = UIColor(red: 0.9, green: 0.4, blue: 0.0, alpha: 0.9)
         saveButton.setTitle("Save", forState: UIControlState.Normal)
     }
+
     
     @IBAction func DoneAction(send: AnyObject)
     {
@@ -60,6 +78,8 @@ class MySecondViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url)
         }
     }
+    
+    
     
     
 }
