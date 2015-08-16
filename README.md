@@ -18,15 +18,16 @@ Optional (incl large and small for clarity):
 <li>UI stepper for more flexibility</li>
 <li>Bill splitting</li>
 <li>App icon</li>
-<li>Update 8/12: added animation to initial interaction</li>
-<li>Update 8/12: added fake settings page — as in, the segmented controls are not (yet) hooked up to anything, but the modal is functional</li>
-<li>Update 8/12: There's a money bag emoji that links to a gif because I was curious how that worked, too, so why not?</li>
-<li>Update 8/13: Launch image, finally! ~silly coding mistakes~</li></ul>
+<li>8/12: added animation to initial interaction</li>
+<li>8/12: added fake settings page — as in, the segmented controls are not (yet) hooked up to anything, but the modal is functional</li>
+<li>8/12: There's a money bag emoji that links to a gif because I was curious how that worked, too, so why not?</li>
+<li>8/13: Launch image, finally! ~silly coding mistakes~</li>
+<li>8/14: Added some logic so the modal option is "Close" until a change is made, at which point it changes color and text to "Save"</li>
+<li>8/14: Hacked in so the $ shows in the text field when the user is editing! It's ghetto fab but it works.</li>
 
 Continuing to work on adding:
-<ul><li>$ prefix on bill entering</li>
 <li>Settings/currency -> functional</li>
-<li>Might address some usability concerns of the associations between stepper and tip, but prioritizing cool coding things ;)</li></ul>
+</ul>
 
 Of note: apologies for the horrible name. I've tried to change it as per the internet's instructions, and I just break it—wanted to prioritize features v name.
 
@@ -35,7 +36,7 @@ Of note: apologies for the horrible name. I've tried to change it as per the int
 
 <i>GIF walkthrough of all required and optional stories</i>
 
-Updated walkthrough:<br/>
+Updated walkthrough as of 8/12:<br/>
 <img src="http://i.imgur.com/Xe093NL.gif">
 
 
