@@ -24,9 +24,11 @@ Optional (incl large and small for clarity):
 <li>8/13: Launch image, finally! ~silly coding mistakes~</li>
 <li>8/14: Added some logic so the modal option is "Close" until a change is made, at which point it changes color and text to "Save"</li>
 <li>8/14: Hacked in so the $ shows in the text field when the user is editing! It's ghetto fab but it works.</li>
-
-Continuing to work on adding:
+<br/>
+Continued exploring but didn't get a chance to add before my trip:
 <li>Settings/currency -> functional</li>
+<li>Custom keyboard input / control aesthetics</li>
+<li>Auto layout</li>
 </ul>
 
 Of note: apologies for the horrible name. I've tried to change it as per the internet's instructions, and I just break it—wanted to prioritize features v name.
@@ -36,6 +38,9 @@ Of note: apologies for the horrible name. I've tried to change it as per the int
 
 <i>GIF walkthrough of all required and optional stories</i>
 
+Updated walkthrough as of 8/17:<br/>
+<img src="http://i.imgur.com/rsndX72.gif">
+<br/>
 Updated walkthrough as of 8/12:<br/>
 <img src="http://i.imgur.com/Xe093NL.gif">
 
